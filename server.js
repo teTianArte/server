@@ -61,7 +61,7 @@ res.send(require('fs').readFileSync(__filename).toString())
 
 
 //OPEN PORT
-app.listen(4000, () => {
+app.listen(process.env.PORT || 4000, () => {
   console.log("OK");
 });
 
